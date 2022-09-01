@@ -15,3 +15,7 @@ CREDENTIALS = {
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-sheets-api%40my-first-project-360914.iam.gserviceaccount.com"
 }
+
+TG_TOKEN = os.getenv('TG_TOKEN', 2)
+SHEET_ID = '1TYWxZ93ZLmrXAvAgFXdg1XMR-DmQ212hENJVYHwrbdY'
+SHEET_URL = 'https://docs.google.com/spreadsheets/d/1TYWxZ93ZLmrXAvAgFXdg1XMR-DmQ212hENJVYHwrbdY/edit#gid=0'

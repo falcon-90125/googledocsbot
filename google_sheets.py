@@ -1,8 +1,8 @@
 import gspread
-from settings import CREDENTIALS
+from settings import CREDENTIALS, SHEET_ID
 
 SERVICE = gspread.service_account_from_dict(CREDENTIALS)
-SHEET = SERVICE.open_by_key('1TYWxZ93ZLmrXAvAgFXdg1XMR-DmQ212hENJVYHwrbdY')
+SHEET = SERVICE.open_by_key(SHEET_ID)
 WORKSHEET = SHEET.get_worksheet(0)
 
 values_list = [1, 'abc', 3]
