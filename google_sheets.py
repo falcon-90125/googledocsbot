@@ -19,4 +19,5 @@ def get_total_revenue():
     values_list = WORKSHEET.col_values(3, 'UNFORMATTED_VALUE')
     return sum(get_numeric_list(values_list))
 
-print(get_total_revenue())
+def add_row(values_list):
+    WORKSHEET.insert_row(values_list, 2)
